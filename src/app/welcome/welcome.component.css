@@ -1,0 +1,59 @@
+.first-view{
+    height: 500px;
+    background: url("src/assets/img/header.jpg")center center/cover no-repeat;
+    background-position: bottom;
+}
+.welcome-content{
+    height: 400px;
+    
+}
+.presentation{ 
+    margin: auto;
+    font-size:42px;
+    font-weight: bold;
+    color: #f1f1f1;
+   
+}
+.quotation{
+    color: #f1f1f1;
+    opacity: .6;
+}
+q{
+    font-style: oblique;
+}
+.contact{
+    position: absolute;
+    height: auto;
+    background-color: rgb(12, 133, 245);
+    color: #f1f1f1;
+    margin-top: -4.5vw;
+    width: 80%;
+    padding: 2vw 0;
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: rgba(31, 22, 22, 0.4) 0px 4px 7px;
+  }
+  .contact-btn{
+    border-radius: 50px;
+    border: 3px solid #586777;
+    background-color: #586777;
+    color:#f1f1f1;
+    margin: auto auto;
+    font-size: 18px;
+  }
+  .footer-div{
+      position: relative; 
+      
+  }
+  .text-to-chat p{
+      margin: 0;
+  }
+  @media (max-width: 767px) {
+      .contact{
+          margin-top: -12vw;
+      }
+      .contact div{
+          margin: 2vw;
+      }
+  }
+
+  

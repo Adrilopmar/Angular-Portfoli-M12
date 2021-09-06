@@ -1,0 +1,31 @@
+ /*--------------------------------navigation bar */
+nav{
+  margin-bottom:  3vw;
+}
+ .menu {
+  width: 100%;}
+  ul{
+    margin: 1vw auto 0 auto ;
+  }
+  .nav-button-contact{
+    border-radius: 50px;
+    border: 3px solid rgba(12, 133, 245);
+    background-color: transparent;
+    color: rgba(12, 133, 245); 
+    font-size: 16px;   
+    margin-top:25%;
+  }
+.nav-item{
+  width: 125px;
+}
+img{
+  width:100%;
+  }
+
+@media (max-width:800px) {
+  .nav-button-contact{
+    background-color: rgba(12, 133, 245);
+    color: #f1f1f1;
+  }
+  
+}

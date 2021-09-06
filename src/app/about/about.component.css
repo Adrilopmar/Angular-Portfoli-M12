@@ -1,0 +1,68 @@
+.historia-nostre {
+    padding: 70px 0; 
+    background: rgba(12, 133, 245, 0.8);
+    padding-bottom: 10vw;
+    }
+  
+  .about-me {
+    width: 60%;
+    margin: 2vw auto; 
+    
+  }
+    .about-me h2 {
+      padding-bottom: 2vw;
+      border-bottom: 1px solid #674014;
+      font-weight: bold; }
+.my-description{
+  margin-top: 2vw;
+}
+.skills{
+  background-color: #f1f1f1;
+  height: auto;
+  width: 90%;
+  margin: -6vw auto auto;
+  border-radius: 30px 30px 0 0;
+  box-shadow: rgba(51, 37, 37, 0.40) 0px 4px 7px;
+}
+.container-skills{
+  padding-top: 2vw;
+}
+.separating{
+  border-right: 1px solid rgb(206, 212, 218,.8);
+  border-left: 1px solid rgb(206, 212, 218,.8);
+}
+.skills h4{
+  font-weight: bolder;
+}
+.skills p {
+  padding: 15px;
+  font-size: 16px;
+}
+.icon-skills{
+  margin: 1vw 0;
+  font-size: 32px;
+}
+
+@media (max-width:800px) {
+  .about-me{
+    width: 80%;
+  } 
+}
+@media (max-width:767px) {
+  .separating{
+    border-left: none;
+    border-right: none;
+  }
+  .container-skills{
+margin-top: 4vw;
+    margin-bottom: 4vw;
+    
+  }
+  .skills{
+    margin-top: -30vw;
+  }
+  .historia-nostre{
+    padding-bottom: 50vw;
+  }
+  
+}

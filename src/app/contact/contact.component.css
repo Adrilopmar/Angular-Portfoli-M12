@@ -1,0 +1,75 @@
+.main{
+    margin-top: 2vw  ;
+    font-size: 24px;
+}
+.sub-titol{
+    font-size: 28px;
+}
+.contact-content{
+    background-color: rgba(12, 133, 245);
+    padding-bottom: 10vw;
+}
+.contact-content i{
+    opacity: .7;
+    padding: 1vw;
+    margin: 1vw 0 2vw 10vw;
+}
+.prova{
+    width: 70%;
+    margin: 5vw  auto;
+    padding: 2vw 0;
+}
+.form-content{
+    background-color: #f1f1f1 ;
+    width: 60%;
+    
+    border-radius: 30px 30px 0 0 ;
+    margin: -15vw auto 0 auto;
+    box-shadow: rgba(51, 37, 37, 0.40) 0px 4px 7px;
+}
+input, textarea{
+    margin: 1vw ;
+    padding: .5vw;
+}
+label{
+    margin:1vw 0 0 2vw;
+}
+#message{
+    margin-bottom: 2vw;
+    height: 10vw;
+}
+button{
+    margin-top: 1vw;
+    padding: .5vw 0;
+    width: 25%;
+    background-color: rgba(12, 133, 245) ;
+    color: #f1f1f1;
+    border-radius: 15px;
+    font-size: 18px;
+    
+}
+.back:hover{
+    cursor: pointer;
+    opacity: 1;
+    background-color: #f1f1f15d;
+    border-radius: 50px;
+}
+.invalid-feedback{
+    margin-left: 2vw;
+}
+
+@media (max-width:767px) {
+    .contact-content{
+        padding-bottom: 20vw;
+    }
+    .form-content{
+        margin: -20vw auto 0 auto;
+    }
+    #message{
+        height: 20vw;
+    }
+    button{
+        width: 50%;
+        margin-bottom: 2vw;
+    }
+}

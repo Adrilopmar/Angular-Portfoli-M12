@@ -1,0 +1,16 @@
+img{
+    width: 80%;
+    margin: 1vw  auto
+}
+.dialog-project{
+    flex-direction: column;
+}
+.info-project{
+    width: 80%;
+    margin: 1vw auto;
+}
+i{
+    margin-left: auto;
+    color: crimson;
+    font-size: 18px;
+}

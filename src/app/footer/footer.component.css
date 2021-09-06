@@ -1,0 +1,44 @@
+
+footer {
+  background-color: #586777;
+  color: #878F97;
+  padding-top: 6vw;
+}
+
+footer .reds-socials a {
+  text-decoration: none; }
+footer .reds-socials i {
+  font-size: 42px;
+  margin: 1vw; }
+footer .copyright {
+  font-size: 12px; 
+  height: 2vw;
+  justify-content: center;}
+.btn-contact{
+  margin: auto;
+  padding: .5vw 1.5vw;
+}
+
+.fa-twitter, .fa-twitter-square {
+    color: #1da1f2; }
+.fa-facebook-square {
+    color: #3b5998; }
+.fa-instagram, .fa-instagram-square {
+    color: #c13584; }
+.fa-github-square {
+    color: #333; }
+.fa-linkedin{
+    color: #00a0dc;
+}
+.hover-social {
+    opacity: .6; }
+.hover-social:hover {
+    opacity: 1; }
+
+@media (max-width: 767px) {
+  footer{
+    height: 300px;
+    padding-top: 20vw;
+  }
+   
+}
