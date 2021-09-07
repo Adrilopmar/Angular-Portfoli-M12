@@ -24,15 +24,16 @@ export class ContactComponent implements OnInit {
   constructor( public route:ActivatedRoute, public Router:Router, private fb:FormBuilder, private contact:ContactService, public Dialog:MatDialog ) { }
 
   isOpen:boolean=true;
-  contactForm: FormGroup;
+  contactForm: FormGroup = new FormGroup({
+    name: new FormControl('',[Validators.required, Validators.minLength(4)]),
+    email: new FormControl('',[Validators.required, Validators.email]),
+    message: new FormControl ('', [Validators.required, Validators.minLength(50)])
+  });
+get email(){return this.contactForm.get('email')}
+get name(){return this.contactForm.get('name')}
+get message(){return this.contactForm.get('message')}
 
   ngOnInit(): void {
-    this.contactForm = this.fb.group({
-      name: ['',  Validators.required],
-      email: ['', Validators.required],
-      message:[]
-    
-    })
   }
   openDialog():void{
     const dialogRef = this.Dialog.open(DialogsProjectsComponent, {

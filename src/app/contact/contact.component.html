@@ -7,25 +7,26 @@
     <hr>
     <div class="row justify-content-around ">
       <div class="col-12 col-lg-6 cassella form-floating is-invalid"  >
-        <input type="text" placeholder="Nom " id="nouNom" class="form-control" formControlName="name" 
-        [ngClass]="{'is-invalid': contactForm.get('name').errors && (contactForm.get('name').touched || contactForm.get('name').dirty)}">
+        <input type="text" placeholder="Nom" name="nom" id="nouNom" class="form-control" formControlName="name" required
+        [ngClass]="{'is-invalid': name.invalid && name.touched}">
         <label for="nouNom">Name</label>
-        <div id="fail-reg-nom" class="invalid-feedback">Name is required</div>
+        <div *ngIf="name.invalid && name.touched" class="invalid-feedback"> Name should be more than 4 characters.</div>
       </div>
       <div class="col-12 col-lg-6 cassella form-floating">
-        <input type="email" placeholder="e-mail" id="nouMail" class="form-control" formControlName="email" 
-        [ngClass]="{'is-invalid': contactForm.get('email').errors && (contactForm.get('email').touched || contactForm.get('email').dirty)}">
+        <input type="email" placeholder="e-mail" id="nouMail" class="form-control" formControlName="email" required [ngClass]="{'is-invalid': email.invalid && email.touched}">
         <label for="nouMail">Email</label>
-        <div id="fail-reg-mail" class="invalid-feedback">Insert a valid e-mail</div>
+        <div *ngIf="email.invalid && email.touched" class="invalid-feedback">Insert a valid e-mail</div>
       </div>
       <div class="cassella form-floating">
-        <textarea type="text" id="message" class="form-control" placeholder="Write your message here" formControlName="message" [ngClass]="{'is-invalid': contactForm.get('message').errors}"></textarea>
+        <textarea type="text" id="message" class="form-control" placeholder="Write your message here" formControlName="message" [ngClass]="{'is-invalid': message.invalid && message.touched}"></textarea>
         <label for="message">Message</label>
-        <div id="fail-reg-message" class="invalid-feedback"></div>
+        <div *ngIf="message.invalid && message.touched" class="invalid-feedback">Message must be more than 50 characters.</div>
       </div>
       <hr>
       <div class="row justify-content-around">
-        <button mat-raised-button id="submit-button" type="submit" value="registrar">Send </button>  
+        
+        <button *ngIf="name.invalid || email.invalid || message.invalid" mat-raised-button disabled value="registrar">Send </button>  
+        <button *ngIf="name.valid && email.valid && message.valid" mat-raised-button id="submit-button" type="submit" value="registrar">Send </button>  
       </div>
     </div>
   </form>
