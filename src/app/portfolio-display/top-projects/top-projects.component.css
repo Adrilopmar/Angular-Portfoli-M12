@@ -1,0 +1,52 @@
+/*----------------------------------- productes destacats*/
+.top-project{
+    padding: 40px;
+    margin: 5vw 0;
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 25px 55px, rgba(0, 0, 0, 0.2) 0px -5px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px; */
+    /* box-shadow: rgba(71, 52, 52, 0.5) 0px 7px 30px; */
+    color: #233744;
+    border-radius: 15px;
+    width: 75%;
+    background: #88ABC2;
+    /* background: #BFDBF7; */
+    /* background: #e6ccb2; */
+    }
+    .top-project img{
+      border: 1px solid rgba(0, 0, 0, 0.226);
+      border-radius: 7px;
+      margin: auto; 
+    }
+    .left{
+      margin-left: auto;
+    }
+    .right{
+      margin-right: auto;
+    }
+    .title{
+      font-size: 38px;
+      /* border-bottom: 1px solid #000; */
+    }
+    .btn{
+    text-transform: uppercase;
+    border-radius: 50px;   
+    
+    background: #233744;
+ }
+
+    .btn-site{
+       background: #CAFF42;
+      /* background: #90be6d; */
+    }
+    .btn:hover{
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      translate: -3px -3px;
+    }
+
+@media (max-width: 767px) {
+  .top-project{
+    margin-top: 20vw ;
+    margin-bottom: 20vw ;
+    width: 100%;
+  }
+   
+}

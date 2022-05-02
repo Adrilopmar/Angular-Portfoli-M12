@@ -1,0 +1,59 @@
+
+  
+  .contenidor-productes .productes a {
+    text-decoration: none;
+    color: #000; 
+  }
+  .producte-dest {
+    top: 2vw;
+    border-radius: 15px;
+    }
+    .hover-dest{
+      position: relative;  
+    }
+  .info-project{
+    text-align: center;
+    color: #f1f1f1;
+    background-color: rgb(46, 46, 46);
+    position: absolute;
+    padding-top: 1.5vw;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 15px;
+    transition: .45s;
+    flex-direction: column;
+  }
+  .info-project b{
+    color:#CAFF42;
+  }
+  .more-info-btn{
+    border-radius: 50px;
+    background-color: #CAFF42;
+    font-size: 18px;
+    color: #233744;
+    margin: 0 auto;
+  }
+  .project-display{
+    margin-top: 4vw;
+  }
+  h5{
+    margin-top: 1rem;
+  }
+    /*-----------------------------hovers projectes*/
+  .info-project:hover{
+    opacity: .9;
+    transition: .45s;
+  }
+  
+  @media (max-width:767px) {
+    section{
+      margin-top: 25vw;
+    }
+    .info-project{
+      padding-top: 6vw;
+    }
+  .project-display{
+    margin: 8vw auto;
+  }
+  }

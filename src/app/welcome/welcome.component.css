@@ -1,42 +1,44 @@
 .first-view{
     height: 500px;
-    background: url("src/assets/img/header.jpg")center center/cover no-repeat;
-    background-position: bottom;
+    background: url("src/assets/img/header2-0.6.jpg") center/cover no-repeat;
+    position: relative;
 }
 .welcome-content{
-    height: 400px;
-    
+    margin: auto 0;
+}
+.overlayDiv{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("src/assets/img/nope-header-1.png");
+    z-index: 1;
 }
 .presentation{ 
     margin: auto;
     font-size:42px;
     font-weight: bold;
-    color: #f1f1f1;
-   
+    color: #e6e6e6;
 }
+
 .quotation{
-    color: #f1f1f1;
-    opacity: .6;
-}
-q{
     font-style: oblique;
 }
+
 .contact{
     position: absolute;
     height: auto;
-    background-color: rgb(12, 133, 245);
-    color: #f1f1f1;
+    background-color: #88ABC2;
+    color:#233744;
     margin-top: -4.5vw;
     width: 80%;
     padding: 2vw 0;
-    border-radius: 30px 30px 0px 0px;
-    box-shadow: rgba(31, 22, 22, 0.4) 0px 4px 7px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 15px 35px;
   }
   .contact-btn{
     border-radius: 50px;
-    border: 3px solid #586777;
-    background-color: #586777;
-    color:#f1f1f1;
+    background-color: #CAFF42;
+    color: #233744;
     margin: auto auto;
     font-size: 18px;
   }
@@ -47,6 +49,15 @@ q{
   .text-to-chat p{
       margin: 0;
   }
+  .btn{
+    text-transform: uppercase;
+    border-radius: 50px;   
+    
+ }
+.btn:hover{
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      translate: -3px -3px;
+    }
   @media (max-width: 767px) {
       .contact{
           margin-top: -12vw;
@@ -54,6 +65,10 @@ q{
       .contact div{
           margin: 2vw;
       }
+      .welcome-content{
+        padding-top: 70px;
+    }
   }
+
 
   

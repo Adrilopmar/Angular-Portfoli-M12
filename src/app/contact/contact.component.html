@@ -1,8 +1,8 @@
 <div class=" contact-content">
-  <i class="fas fa-arrow-left main back" routerLink="/main"></i>
+  <i class="fas fa-arrow-left main back" routerLink="/"></i>
 </div>
-<div *ngIf="isOpen" [@flyIn] class="form-content">
-  <form  id="register-form"  class="prova"  [formGroup]="contactForm" (ngSubmit)="onSubmitc($event, contactForm.value)" action="https://formspree.io/f/mzbyypdq" method="POST">
+<div *ngIf="isOpen" [@flyInOut] class="form-content">
+  <form  id="register-form"  class="form-inputs"  [formGroup]="contactForm" (ngSubmit)="onSubmitc($event, contactForm.value)" action="https://formspree.io/f/mzbyypdq" method="POST">
     <h5  class="text-center sub-titol">Contact</h5>
     <hr>
     <div class="row justify-content-around ">
@@ -24,9 +24,8 @@
       </div>
       <hr>
       <div class="row justify-content-around">
-        
-        <button *ngIf="name.invalid || email.invalid || message.invalid" mat-raised-button disabled value="registrar">Send </button>  
-        <button *ngIf="name.valid && email.valid && message.valid" mat-raised-button id="submit-button" type="submit" value="registrar">Send </button>  
+        <button *ngIf="name.invalid || email.invalid || message.invalid" class="btn btn-secondary disabled" disabled value="registrar">Send </button>  
+        <button *ngIf="name.valid && email.valid && message.valid" class="btn btn-site" id="submit-button" type="submit" value="registrar">Send </button>  
       </div>
     </div>
   </form>

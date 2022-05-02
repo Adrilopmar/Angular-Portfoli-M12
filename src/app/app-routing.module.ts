@@ -3,8 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
+
 const routes: Routes = [
-  {path:'main', component:WelcomeComponent,
+  {path:'./', component:WelcomeComponent,
     data:{
       title: 'Adri lopez martinez',
       description:'Front end Angular developer portfolio, projects, personal information, programmer skill, soft skills and aim and goals',
@@ -18,7 +19,7 @@ const routes: Routes = [
       ogTitle:'Contact details and contact form of Adri. A nice Frontend Angular developer.' 
     }
   },
-  {path:'', redirectTo:'/main', pathMatch:'full'}
+  {path:'', redirectTo:'./', pathMatch:'full'},
 ];
 
 @NgModule({

@@ -1,7 +1,10 @@
-.placeholder-try{
+.content{
   height: 100%;
   flex-direction: column;
 }
 app-footer{
   margin-top: auto;
+}
+b{
+  color:#CAFF42;
 }

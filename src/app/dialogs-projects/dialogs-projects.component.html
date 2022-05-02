@@ -46,11 +46,11 @@
     <div mat-dialog-conten>
         <h4 class="text-center">My project</h4> 
         <div t class="d-flex dialog-project" >
-            <img class="" src="assets/img/Chuck-API.png" alt="">
+            <img class="" src="assets/img/register-cars.png" alt="">
             <div class="info-project">
-                <p> This project is basically an API request. Everytime you click the button it makes a request to a Chuck Norris jokes API. 
-                    Hope Chuck won't get mad at me. Not gonna write his name again... Better safe than sorry.
-                    If you want to have fun with his jokes, do not hesitate to check this web out. 
+                <p> This project was the one which taught me how to use <b>TypeScript</b> and its classes. 
+                    At the begining was quite hard to keep the type of each variable. After that was when I undestood
+                    why TypeScript is important. Since then TypeScript is always present in my codes.
 
                 </p>
             </div>
@@ -58,17 +58,20 @@
     </div>
     <div mat-dialog-actions class="d-flex justify-content-between">
         <button mat-button [mat-dialog-close]="true"> Close</button>
-        <button mat-raised-button color="primary" [mat-dialog-close]="true"> Go to site</button>
+        <a mat-raised-button color="primary" [mat-dialog-close]="true" href="https://adrilopmar.github.io/register-cars/"> Go to site</a>
     </div>
 </div>
 
-<div *ngIf="data == 'josep'">
+<div *ngIf="data == 'calculator'">
     <div mat-dialog-conten>
         <h4 class="text-center">My project</h4>  
         <div t class="d-flex dialog-project" >
-            <img class="" src="assets/img/boutique-josep.png" alt="">
+            <img class="" src="assets/img/calculator.png" alt="">
             <div class="info-project">
-                <p> This website is a Online store about cosmetics. Nowadays still under development
+                <p> One of my firsts projects with Java Script which I am really proud of. 
+                    It was really hard to understand the language, but once undestood how JS was working, 
+                    the whole world of posibilities that JS offers you opened up right infront of me. 
+                    Nowadays JavaScript stills being one of the languages I enjoy the most.
 
                 </p>
             </div>
@@ -76,7 +79,7 @@
     </div>
     <div mat-dialog-actions class="d-flex justify-content-between">
         <button mat-button [mat-dialog-close]="true"> Close</button>
-        <button mat-raised-button color="primary" [mat-dialog-close]="true"> Go to site</button>
+        <a mat-raised-button color="primary" [mat-dialog-close]="true" target="_blank" href="https://adrilopmar.github.io/calculator/" > Go to site</a>
     </div>
 </div>
 <!-- Contact Dialog -->

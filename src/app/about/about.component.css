@@ -1,35 +1,47 @@
 .historia-nostre {
     padding: 70px 0; 
-    background: rgba(12, 133, 245, 0.8);
+    /* background: #BFDBF7; */
+    /* background: rgb(85, 171, 252); */
     padding-bottom: 10vw;
     }
-  
-  .about-me {
-    width: 60%;
-    margin: 2vw auto; 
-    
+    img{
+      opacity: .8;
+      margin: auto;
+    }
+  .hand{
+    font-size: 38px;
   }
-    .about-me h2 {
-      padding-bottom: 2vw;
-      border-bottom: 1px solid #674014;
-      font-weight: bold; }
-.my-description{
-  margin-top: 2vw;
-}
+  .about-me {
+    margin: 2vw auto; 
+  }
+.about-me h2 {
+  margin-bottom: 2vw;
+  /* border-bottom: 1px solid #674014; */
+  font-weight: bold; }
 .skills{
-  background-color: #f1f1f1;
+  background-color: #88ABC2;
+  color:#233744;
   height: auto;
   width: 90%;
   margin: -6vw auto auto;
-  border-radius: 30px 30px 0 0;
-  box-shadow: rgba(51, 37, 37, 0.40) 0px 4px 7px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 15px 35px;
+}
+.personal-skills ul{
+  padding: 0;
+}
+ul{
+  margin: 0;
+  flex-direction: column;
+  list-style: none;
+  
 }
 .container-skills{
-  padding-top: 2vw;
+  padding: 2vw ;
 }
 .separating{
-  border-right: 1px solid rgb(206, 212, 218,.8);
-  border-left: 1px solid rgb(206, 212, 218,.8);
+  border-right: 1px solid rgba(61, 63, 65, 0.3);
+  border-left: 1px solid rgba(61, 63, 65, 0.3);
 }
 .skills h4{
   font-weight: bolder;
@@ -39,10 +51,22 @@
   font-size: 16px;
 }
 .icon-skills{
-  margin: 1vw 0;
+  margin: 1vw auto;
   font-size: 32px;
 }
-
+.class{
+  color: #e6e6e6;
+}
+.padding-list{
+  padding: 15px;
+}
+.true{
+  color:#CAFF42 ;
+}
+.cv{
+  text-decoration: none;
+  color:#CAFF42 
+}
 @media (max-width:800px) {
   .about-me{
     width: 80%;
@@ -54,7 +78,7 @@
     border-right: none;
   }
   .container-skills{
-margin-top: 4vw;
+    margin-top: 4vw;
     margin-bottom: 4vw;
     
   }

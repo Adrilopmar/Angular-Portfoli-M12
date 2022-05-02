@@ -1,5 +1,5 @@
 import { Component, OnInit,   } from '@angular/core';
-import { animate,transition,style, trigger } from '@angular/animations';
+import { animate,transition,style, trigger, state } from '@angular/animations';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { FormControl, FormGroup, Validators,FormBuilder } from '@angular/forms';
 import { ContactService } from '../contact.service';
@@ -12,12 +12,16 @@ import { MatDialog } from '@angular/material/dialog';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css'],
   animations:[
-    trigger('flyIn',[
-      transition(':enter',[
-        style({transform:'translateY(25%)', opacity:'0', transition: '.5s'}),
-        animate('.5s')
+    trigger('flyInOut', [
+      state('in', style({ transform: 'translateX(0)' })),
+      transition('void => *', [
+        style({ transform: 'translateY(20%)', opacity: '0'  }),
+        animate(400)
       ]),
-    ]),
+      transition('* => void', [
+        animate(100, style({ transform: 'translateY(0%)',opacity: '1' }))
+      ])
+    ])
   ]
 })
 export class ContactComponent implements OnInit {
@@ -38,7 +42,7 @@ get message(){return this.contactForm.get('message')}
   openDialog():void{
     const dialogRef = this.Dialog.open(DialogsProjectsComponent, {
       data:'contact'})
-    dialogRef.afterClosed().subscribe(res => {console.log(res)})
+    dialogRef.afterClosed()
   }
   onSubmitc(event:Event, formData):void{
     event.preventDefault()
